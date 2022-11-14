@@ -1,0 +1,101 @@
+.menu-nav {
+  float: left;
+  width: 100%; /* 960px */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #2e3030; 
+  height: 50px;
+  position:relative;
+}
+.menu-nav li {
+  display: inline;
+  float:left; 
+}
+
+.menu-nav li a {
+  float: left;
+  font-size: 1.1em;
+  font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0; 
+  padding: 0 37px;
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .menu-nav li a {
+  float: left;
+  font-size: 1.1em;
+  font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0; 
+  padding: 0 14px;
+}
+}
+
+/* APPLIES THE ACTIVE STATE */
+.menu-nav  li a.current, .menu-nav li:hover > a  {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #330000;
+  background:#0479b5 url(../images/nuck.jpg) bottom center no-repeat;
+
+}
+
+/* THE SUBMENU LIST HIDDEN BY DEFAULT */
+.menu-nav  ul li ul {
+  display: none;
+}
+
+/* WHEN THE FIRST LEVEL MENU ITEM IS HOVERED, THE CHILD MENU APPEARS */
+.menu-nav li:hover > ul {
+  position: absolute;
+  display: block;
+  width: 100%; /* 920px */
+  height: 50px;
+  margin: 50px 0 0 0;
+  background-color:#fff;
+  top:0px;
+  float:left;
+  
+
+}
+
+.menu-nav li:hover > ul li a {
+  float: left;
+  font: normal 1.1em arial,verdana,tahoma,sans-serif;
+  line-height:50px;
+  color: #9c9c9c;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 20px 0 0;
+  background: #fff url(../images/left-arrow.jpg) right no-repeat;
+}
+
+.menu-nav li:hover > ul li a:hover {
+  color: #000;
+  text-decoration: none;
+  text-shadow: none;
+}
+@media only screen and (min-width : 220px) and (max-width :767px) {
+ul#nav-main li a {
+	padding:0 2%;
+	font-size:12px;
+	width:100%;	
+}
+ul#nav-main li ul li a{
+	line-height:18px;	
+}
+ul#nav-main li:hover > ul{
+	height:auto;	
+}
+.menu-nav{
+  background:none !important; 
+}
+		
+}
